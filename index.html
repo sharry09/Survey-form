@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Form</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head> 
+  <style>
+    
+.container{
+  background-color:#eee;
+}
+p{
+  background-color:#ffff80;
+}
+.f{
+  display:block;
+  text-align :center;
+  }
+#number{
+ text-indent: -120px;
+}
+#rating{
+  text-indent: 20px;
+}
+#gender{
+  text-indent: -190px;
+}
+#contact{
+  text-indent: -100px;
+}
+.hello{
+  text-indent: 20px;
+}
+#comments{
+  text-indent: -70px;
+}
+textarea{
+  width: 250px;
+  }</style>
+  <body>
+    <div class="f" class="container">
+  <h1 id="title">Apple's Survey Form</h1>
+  <p id="description">Got a minute?</p>
+  <form  id="survey-form" class="was-validated">
+    <div class="form-group">
+    <label for="name-label">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+    <label for="email-label">E-Mail</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+     <label for="number-label" id="number">Rate us</label>
+  <input type="number" id="number" name="number" min="0" max="5" required>
+    </div>
+    <div class="form-group"  class="dropdown">
+
+      
+ <label for="drop-down" id="rating">How was our product</label>
+  <select id="rating" name="rating" required>
+    <option value="choose-one">Choose one</option>
+     <option value="top-notch">Top-Notch</option>
+    <option value="good">Good</option>
+    <option value="poor">Poor</option>
+    <option value=" worst">Worst</option>
+  </select>
+    </div>
+    <div class="form-group" >
+    <label for="gender" id="gender">Gender</label>
+<br>
+     <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
+     <label for="female">Female</label>
+ 
+  <input type="radio" id="female" name="gender" value="female">
+ <label for="other">Other</label>
+    
+  <input type="radio" id="other" name="gender" value="other">
+      </div>
+   
+    <div class="form-group" >
+    <label for="contact" id="contact">How to contact you</label>
+    <br>
+    <label for="contact" class="hello">Email</label>
+    <input type="checkbox" value="email">
+     <label for="contact" class="hello">SMS</label>
+    <input type="checkbox" value="sms">
+     <label for="contact" class="hello">Call</label>
+    <input type="checkbox" value="call">
+    </div>
+    <div class="form-group">
+    <label for="comments" id="comments">We value your comments</label>
+    <br>
+  <textarea id="comments" name="comments" rows="3" cols="50" >
+</textarea>
+    </div>
+    <input  type="button" class="btn btn-secondary" id="submit" onclick="submit" value="Submit">
+                                                                                            
+    </form>
+    </div>                                 
+    </body>
+ </html>                                    
+                                                                                            
+
+     
+    
